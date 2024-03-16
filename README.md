@@ -6,6 +6,11 @@
 ## keep a separate copy of your audio files:
 Note that audio files with spaces will be renamed: "Track 13.wav" will be renamed "Track-13.wav" in order to enable ffmpeg to injest the file correctly (otherwise ffmpeg will complain it cannot find the "Track" file as it cuts off the name after the space. **Renaming the file has the effect of resetting the file date to today so make sure you have a backup if the original file metadata is important.**
 
+https://felixquinihildebet.wordpress.com/2024/03/16/distil-whisper-is-the-tipping-point/
+
+
+
+
 ## colab version is archived
 The original Colab notebook is left in for reference. Local processing ensures greater confidentiality and security and is always accessible.
 
