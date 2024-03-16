@@ -1,3 +1,5 @@
+![Designer (2)](https://github.com/frasertajima/whisper_bulk_transcription/assets/69366820/8af38525-f365-416f-9460-f7734cd5a7b0)
+
 # whisper_bulk_transcription
 ## Bulk transcription of audio files to text using OpenAI Whisper (https://github.com/openai/whisper)
 
