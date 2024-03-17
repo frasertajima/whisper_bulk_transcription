@@ -6,6 +6,8 @@
 ### updated to handle Gnome Podcasts downloaded locally
 If you set the podcasts=True flag, copies all locally downloaded podcasts to directory specified (best to keep the processing directory clear of old audio files as otherwise bulk transcriptions will only duplicate the work). Updated file handling to include *.m2a format from Podcasts (https://apps.gnome.org/en-GB/Podcasts/). This may be an efficient way to scan podcasts that have pilled up but which you have not had time to listen to. By converting to text quickly, you can scan to see which podcasts might be of interest. Also handy if you need to copy information contained in the podcast.
 
+Added a utility to gather up all markdown (distl-whisper) or text (whisper) files generated in the working directory into a single file for ease of scanning podcast text. The file is stored in the same directory as the Jupyter notebook. Make sure to delete all your old podcasts and other files in your working directory before running a new bulk transcription run.
+
 [whisper-distil-CUDA](https://github.com/frasertajima/whisper_bulk_transcription/blob/main/whisper-distil-CUDA.ipynb) builds upon whisper, is easier to setup in Fedora Silverblue and uses CUDA for astonishing speed (https://huggingface.co/distil-whisper/distil-large-v2). Accuracy is almost as good as the CPU bound [whisper to text](https://github.com/frasertajima/whisper_bulk_transcription/blob/main/whisper%20to%20text.ipynb) model which requires a bit more setup (https://github.com/ggerganov/whisper.cpp). The directory versions of these two ASR handle bulk transcription. 
 
 ## keep a separate copy of your audio files:
