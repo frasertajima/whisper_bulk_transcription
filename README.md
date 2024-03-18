@@ -3,7 +3,11 @@
 # whisper_bulk_transcription
 Bulk transcription of audio files to text using OpenAI Whisper (https://github.com/openai/whisper)
 
-[video runthrough](https://www.instagram.com/reel/C4ofFt2s18G1a0DCNFufKi__6ASbGzA04ohKt80/?igsh=MWxqOXFpZ2xkMHdjNw==)
+
+https://github.com/frasertajima/whisper_bulk_transcription/assets/69366820/28a14703-963d-462e-ac1f-9707e5dff81c
+
+
+
 ### updated to handle Gnome Podcasts downloaded locally
 - If you set the `podcasts=True` flag, copies all locally downloaded podcasts to directory specified (best to keep the processing directory clear of old audio files as otherwise bulk transcriptions will only duplicate the work).
 - Updated file handling to include `*.m2a` format from Podcasts (https://apps.gnome.org/en-GB/Podcasts/). This may be an efficient way to scan podcasts that have pilled up but which you have not had time to listen to. By converting to text quickly, you can scan to see which podcasts might be of interest (and send the text file to a Kindle). Also handy if you need to copy information contained in the podcast.
