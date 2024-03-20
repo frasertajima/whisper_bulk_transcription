@@ -9,6 +9,7 @@ https://github.com/frasertajima/whisper_bulk_transcription/assets/69366820/28a14
 
 
 ### updated to handle Gnome Podcasts downloaded locally
+- added [whisper-youtube](https://github.com/frasertajima/whisper_bulk_transcription/blob/main/whisper-youtube.ipynb) and [whisper-youtube-bulk](https://github.com/frasertajima/whisper_bulk_transcription/blob/main/whisper-youtube-bulk.ipynb) to handle youtube share link and playlist transcriptions, something that might be handly with online courses.
 - I finally figured out how to setup whisper.cpp with CUDA in an immutable OS like Fedora Silverblue which cannot install the CUDA toolkit directly [getting blurt to use CUDA in Fedora Silverblue](https://felixquinihildebet.wordpress.com/2024/03/19/getting-blurt-to-use-the-cuda-whisper-cpp-version-in-fedora-silverblue/)
 - If you set the `podcasts=True` flag, copies all locally downloaded podcasts to directory specified (best to keep the processing directory clear of old audio files as otherwise bulk transcriptions will only duplicate the work).
 - Updated file handling to include `*.m2a` format from Podcasts (https://apps.gnome.org/en-GB/Podcasts/). This may be an efficient way to scan podcasts that have pilled up but which you have not had time to listen to. By converting to text quickly, you can scan to see which podcasts might be of interest (and send the text file to a Kindle). Also handy if you need to copy information contained in the podcast.
