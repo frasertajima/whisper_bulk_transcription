@@ -26,8 +26,7 @@ https://github.com/frasertajima/whisper_bulk_transcription/assets/69366820/28a14
 Note that audio files with spaces will be renamed: "Track 13.wav" will be renamed "Track-13.wav" in order to enable ffmpeg to injest the file correctly (otherwise ffmpeg will complain it cannot find the "Track" file as it cuts off the name after the space. **Renaming the file has the effect of resetting the file date to today so make sure you have a backup if the original file metadata is important.** Files without whitespaces in their names will not be affected.
 
 https://felixquinihildebet.wordpress.com/2024/03/16/distil-whisper-is-the-tipping-point/
-
-
+https://felixquinihildebet.wordpress.com/2022/10/03/how-to-transcribe-hundreds-of-audio-files-into-text-using-openai-whisper/
 
 
 ## colab version is archived
@@ -37,4 +36,12 @@ Runs in Google Colab with GPU support. Can be modified to run locally as a Jupyt
 
 Google Colab runs out of memory and crashes with the `model` set to large (but it will run the large model with enough RAM locally).
 
-https://felixquinihildebet.wordpress.com/2022/10/03/how-to-transcribe-hundreds-of-audio-files-into-text-using-openai-whisper/
+
+## command line version
+![Screenshot From 2025-04-23 19-13-05](https://github.com/user-attachments/assets/b1032d8c-a2f5-4c53-9137-478880ecf07b)
+
+If you use something like Google Recorder to record your audio, you can download the audio files from the recorder webpage to a dedicated local directory. Save this python script in the same directory and simply run whisper_run.py from the command line. It will then transcribe the audio files and save the text in the same markdown format (without the overhead of loading VSCode and the Jupyter notebooks). This command line workflow of "uv run whisper_run.py" if you have uv installed is much faster when dealing with the many audio files that accumulate over time.
+
+
+
+
